@@ -18,18 +18,17 @@ a {
     background-size: cover;
     background-position-y: -16rem;
 }
+
 .buttons {
     display: flex;
     column-gap: 3rem;
     padding: 2rem;
 }
-
 .btn-bir:hover {
     background-position: right center;
     color: #fff;
     text-decoration: none;
 }
-
 .btn-bir {
     background-image: linear-gradient(
         to right,
@@ -48,7 +47,6 @@ a {
     border-radius: 10px;
     display: block;
 }
-
 .btn-timeline {
     background-image: linear-gradient(
         to right,
@@ -69,13 +67,11 @@ a {
     border-radius: 10px;
     display: block;
 }
-
 .btn-timeline:hover {
     background-position: right center; 
     color: #fff;
     text-decoration: none;
 }
-
 .btn-gallery {
     background-image: linear-gradient(
         to right,
@@ -96,7 +92,6 @@ a {
     border-radius: 10px;
     display: block;
 }
-
 .btn-gallery:hover {
     background-position: right center; /* change the direction of the change here */
     color: #fff;

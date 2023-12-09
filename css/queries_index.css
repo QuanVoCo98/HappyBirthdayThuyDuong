@@ -1,12 +1,14 @@
+/* Big tablet to 1200px; */
 @media only screen and (max-width:1200px){
     html{
         zoom: 95%;
     }
 }
 
+/* Small tablet to big tablet from 768x to 1023px */
 @media only screen and (max-width:1023px){
     html{
-        zoom: 100%;
+        zoom: 95%;
     }
     .container {
         width: 665px;
@@ -17,7 +19,7 @@
     .avatar{
         cursor: pointer;
         position: absolute;
-        top: 30%;
+        top: 35%;
         left: calc(40% - 100px);
     }  
     .avatar__img {
@@ -33,6 +35,7 @@
     }
 }
 
+/* Small phones to small tablets */
 @media only screen and (max-width:767px){
     html{
         zoom: 70%;
@@ -62,6 +65,7 @@
     }
 }
 
+/* Small phones from 0 to 480px */
 @media only screen and (max-width:480px){
     html{
         zoom: 48%;
