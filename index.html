@@ -46,7 +46,7 @@
             <!-- 2. Dòng chữ Happy Birthday
             Nếu bạn muốn thêm chữ vào thì phải thay đổi css tương ứng cho nó -->
             <div class="balloon">
-                <div><span>D</span></div>
+                <div><span>H</span></div>
                 <div><span>A</span></div>
                 <div><span>P</span></div>
                 <div><span>P</span></div>
@@ -62,9 +62,9 @@
             </div>
             <div class="avatar">
                 <!-- 3. Avatar của người bạn muốn gởi lời chúc -->
-                <img src="./MyAvatar.jpg" alt="" class="avatar__img" onclick="showMessage()" />
+                <img src="./MyAvatar.jpg" alt="" class="avatar__img" onclick="ChuyenTrang()" />
                 <!-- 4. Tên của người đó -->
-                <h1 onclick="showMessage()" class="avatar__title">Quốc Định</h1>
+                <h1 onclick="ChuyenTrang()" class="avatar__title">Thùy Dương</h1>
             </div>
             
             <!-- 5. Phần nhạc -->
@@ -76,18 +76,8 @@
             if (document.location.search.match(/type=embed/gi)) {
                 window.parent.postMessage("resize", "*");
             }
-            function showMessage() {
-                // // 6. Lời nhắn hiện ra khi bấm vào tên hoặc avatar
-                // swal({
-                //     title: "Lời nhắn", // Tiêu đề của popup
-                //     text: "Em yêu của anh, hôm nay là sinh nhật em, ngày này năm sau cũng là sinh nhật em và các năm sau nữa sau nữa cũng là sinh nhật em. Nhưng anh mong điều tốt lành sẽ đến với anh mỗi ngày và hãy để anh được ở bên em trong suốt cuộc đời này, để được yêu thương và chăm sóc cho em. Yêu em nhiều nhiều lắm!", // Nội dung lời nhắn
-                //     button: {
-                //         text: "❤️️",
-                //     },
-                // });
-
-                location.href = "test.html";
-
+            function ChuyenTrang() {
+                location.href = "timeline.html";
             }
         </script>
         <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
