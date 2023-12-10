@@ -8,6 +8,9 @@
   .buttons {
   padding: 30%;
  }
+ .say{
+  font-size: 20px;;
+ }
 }
  
 /* Small phones to small tablets */

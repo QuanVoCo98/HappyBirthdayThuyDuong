@@ -123,7 +123,7 @@
         drawHeart: function() {
             var ctx = this.tree.ctx, heart = this.heart;
             var point = heart.point, color = heart.color, 
-                scale = heart.scale + 0.8;
+                scale = heart.scale;
             ctx.save();
             ctx.fillStyle = color;
             ctx.translate(point.x, point.y);
@@ -162,19 +162,19 @@
             ctx.translate(point.x, point.y);
             ctx.scale(scale, scale);
             ctx.moveTo(0, 0);
-    	    ctx.lineTo(30, 15);
-    	    ctx.lineTo(90, 15);
+    	    ctx.lineTo(25, 15);
+    	    ctx.lineTo(80, 15);
             ctx.stroke();
 
             ctx.moveTo(0, 0);
             ctx.scale(0.75, 0.75);
-            ctx.font = "16px 微软雅黑,Verdana";
+            ctx.font = "14px 微软雅黑,Verdana";
             ctx.fillText("Come Baby", 35, 10);
             ctx.restore();
         },
         clear: function() {
             var ctx = this.tree.ctx, cirle = this.cirle;
-            var point = cirle.point, scale = cirle.scale, radius = 26;
+            var point = cirle.point, scale = cirle.scale, radius = 28;
             var w = h = (radius * scale);
             ctx.clearRect(point.x - w, point.y - h, 4 * w, 4 * h);
         },

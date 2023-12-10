@@ -38,20 +38,18 @@
         <link
         href="https://fonts.googleapis.com/css?family=Wendy+One"
         rel="stylesheet"
-        type="text/css"
-    />
-        <div class="buttons">
-        </div>
+        type="text/css"/>
+        <div class="buttons"> </div>
         <div id="main">
              <div id="wrap">
                 <div id="text">
 			        <div id="code">
 					<!-- 4. CHỈNH SỬA LỜI CHÚC CỦA BẠN TẠI ĐÂY-->
 			      <font color="#3500ff">
-                        <span class="say" style="font-size:30px;">Chúc mừng sinh nhật người con gái anh yêu</span><br>
+                        <span class="say">Chúc mừng sinh nhật người con gái anh yêu</span><br>
 						<span class="say">Em có nhớ chúng ta yêu nhau được bao nhiêu ngày không ?</span><br>
 						<span class="say">Anh thì nhớ rất rõ đấy.</span><br>
-						<span class="say"> </span><br>
+						<!-- <span class="say"> </span><br> -->
 						<span class="say">Người ta nói bệnh nào cũng có thuốc chữa</span><br>
 						<span class="say">Anh đã không tin điều đó nữa đến khi anh gặp em</span><br>
 						<span class="say">Anh đã phát hiện ra anh đã mang một căn bệnh mà có lẽ,</span><br>
@@ -59,17 +57,17 @@
 						<span class="say">Đó là căn bệnh hạnh phúc nhất mà anh mai mắn được mắc phải</span><br>
 						<span class="say">Đó là bệnh yêu em quá nhiều</span><br>
 						<span class="say">Yêu em cho đến khi nào anh không còn tồn tại <3</span><br>
-						<span class="say">Hãy cứ tin em nhé.</span><br>
-						<span class="say">Chúc em sinh nhật vui vẽ.</span><br>
+						<!-- <span class="say">Hãy cứ tin em nhé.</span><br>
+						<span class="say">Chúc em sinh nhật vui vẽ.</span><br> -->
 						<span class="say"> </span><br>
                         <span class="say"><span class="space"></span> -- Anh yêu Em --</span>
 			     </font>
       </div>
                 </div>
-                <!-- <div id="clock-box">
-					<span class="STYLE1"> Thời gian đã yêu em</span>
+                <div id="clock-box">
+					<span class="STYLE1"> Chúng ta đã quen nhau: </span>
                   <div id="clock"></div>
-              </div> -->
+              </div>
                 <canvas id="canvas" width="1100" height="680"></canvas>
             </div>            
         </div>
@@ -80,8 +78,7 @@
     </audio> -->
     <script>
     (function(){
-        var canvas = $('#canvas');
-		
+        var canvas = $('#canvas');		
         if (!canvas[0].getContext) {
             $("#error").show();
             return false;        }
@@ -94,7 +91,7 @@
             seed: {
                 x: width / 2 - 20,
                 color: "rgb(190, 26, 37)",
-                scale: 2
+                scale: 3
             },
             branch: [
                 [535, 680, 570, 250, 500, 200, 30, 100, [
@@ -115,7 +112,7 @@
                 ]] 
             ],
             bloom: {
-                num: 700,
+                num: 999,
                 width: 1080,
                 height: 650,
             },
@@ -151,16 +148,16 @@
         var seedAnimate = eval(Jscex.compile("async", function () {
             seed.draw();
             while (hold) {
-                $await(Jscex.Async.sleep(10));
+                $await(Jscex.Async.sleep(1));
             }
             while (seed.canScale()) {
                 seed.scale(0.95);
-                $await(Jscex.Async.sleep(10));
+                $await(Jscex.Async.sleep(1));
             }
             while (seed.canMove()) {
                 seed.move(0, 2);
                 foot.draw();
-                $await(Jscex.Async.sleep(10));
+                $await(Jscex.Async.sleep(1));
             }
         }));
 
@@ -173,7 +170,7 @@
 
         var flowAnimate = eval(Jscex.compile("async", function () {
             do {
-    	        tree.flower(2);
+    	        tree.flower(3);
                 $await(Jscex.Async.sleep(10));
             } while (tree.canFlower());
         }));
@@ -199,7 +196,7 @@
                 tree.ctx.clearRect(0, 0, width, height);
                 tree.jump();
                 foot.draw();
-                $await(Jscex.Async.sleep(25));
+                $await(Jscex.Async.sleep(8));
             }
         }));
 
