@@ -4,7 +4,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link rel="icon" type="image/png" href="./img/CILKGax.png">
         <!-- Tiêu đề của trang dòng thời gian -->
-		<title>Thời gian đã trải qua</title>	
+		<title>Điều Muốn Nói</title>	
 
         <link type="text/css" rel="stylesheet" href="./css/default.css">
         <link rel="stylesheet" href="./css/style.css">
@@ -46,7 +46,7 @@
 			        <div id="code">           
 					<!-- 4. CHỈNH SỬA LỜI CHÚC CỦA BẠN TẠI ĐÂY-->
 			      <font color="#0000FF">
-                        <span class="say">Chúc mừng sinh nhật người con gái anh yêu</span><br>
+                        <span class="say">Chúc em có một ngày sinh nhật thật vui vẻ, hạnh phúc và đầy ý nghĩa nhá..!</span><br>
 						<span class="say">Em có nhớ chúng ta yêu nhau được bao nhiêu ngày không ?</span><br>
 						<span class="say">Anh thì nhớ rất rõ đấy.</span><br>
 						<!-- <span class="say"> </span><br> -->
@@ -112,7 +112,7 @@
                 ]] 
             ],
             bloom: {
-                num: 999,
+                num: 720,
                 width: 1080,
                 height: 650,
             },
@@ -177,15 +177,15 @@
 
         var moveAnimate = eval(Jscex.compile("async", function () {
             tree.snapshot("p1", 240, 0, 610, 680);
-            while (tree.move("p1", 500, 0)) {
+            while (tree.move("p1", 520, 0)) {
                 foot.draw();
                 $await(Jscex.Async.sleep(10));
             }
             foot.draw();
-            tree.snapshot("p2", 500, 0, 610, 680);
+            tree.snapshot("p2", 520, 0, 610, 680);
 
             canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
-            canvas.css("background", "#ffe");
+            // canvas.css("background", "#ffe");
             $await(Jscex.Async.sleep(300));
             canvas.css("background", "none");
         }));
