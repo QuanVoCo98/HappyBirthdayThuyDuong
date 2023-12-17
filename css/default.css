@@ -9,9 +9,6 @@ body {
     font-family: "sans-serif", "sans-serif", sans-serif;
     color: #660086;
     overflow: auto;
-
-    overflow-x: hidden;
-    overflow-y: hidden;
 }
 a {
     color: #00ff45;
