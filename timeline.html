@@ -2,10 +2,8 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-		<link rel="shortcut icon" type="image/png" href="./birthdayCake.png"/>
-        <!-- Tiêu đề của trang dòng thời gian -->
+        <!-- Đây là phần title của website -->
 		<title>Happy Birthday</title>	
-
         <link type="text/css" rel="stylesheet" href="./css/default.css">
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/queries_timeline.css" />
@@ -47,35 +45,27 @@
 					<!-- 4. CHỈNH SỬA LỜI CHÚC CỦA BẠN TẠI ĐÂY-->
 			      <font color="#0000FF">
                         <span class="say">Chúc em có một ngày sinh nhật thật vui vẻ, hạnh phúc và đầy ý nghĩa nhá..!</span><br>
-						<span class="say">Em có nhớ chúng ta yêu nhau được bao nhiêu ngày không ?</span><br>
-						<span class="say">Anh thì nhớ rất rõ đấy.</span><br>
-						<!-- <span class="say"> </span><br> -->
-						<span class="say">Người ta nói bệnh nào cũng có thuốc chữa</span><br>
-						<span class="say">Anh đã không tin điều đó nữa đến khi anh gặp em</span><br>
-						<span class="say">Anh đã phát hiện ra anh đã mang một căn bệnh mà có lẽ,</span><br>
-						<span class="say">Có lẽ sẽ không bao giờ có thuốc điều trị</span><br>
-						<span class="say">Đó là căn bệnh hạnh phúc nhất mà anh mai mắn được mắc phải</span><br>
-						<span class="say">Đó là bệnh yêu em quá nhiều</span><br>
-						<span class="say">Yêu em cho đến khi nào anh không còn tồn tại <3</span><br>
-						<!-- <span class="say">Hãy cứ tin em nhé.</span><br>
-						<span class="say">Chúc em sinh nhật vui vẽ.</span><br> -->
+						<span class="say">Thùy Dương à, nhân ngày đặc biệt này anh cũng muốn bày tỏ tình cảm của anh đến em...</span><br>
+						<span class="say">Ngay từ ngày gặp lại em... Anh đã cảm nhận được trái tim mình đã đập loạn nhịp mất rồi em à. Kể từ hôm ấy, trong tâm trí anh lúc nào cũng nhớ đến em... Anh nhớ cái cách em cười, cách em nói chuyện và cái cách em nhìn anh. Có lẽ anh đã yêu em mất rồi... </span><br>
+						<span class="say">Có lẽ hiện tại, điều anh mà anh mong muốn nhất là có thể được ở bên cạnh em, quan tâm em, chăm sóc em, bảo vệ em, sẽ là người mang lại cảm giác an toàn cho em. Anh muốn được cùng em tận hưởng những niềm vui, nỗi buồn, cùng em vượt qua khó khăn, cùng em xây dựng tương lai riêng của 2 đứa mình. </span><br>
+                        <span class="say">Anh mong em cho anh cơ hội được làm người yêu em nhá..!!!</span><br>
 						<span class="say"> </span><br>
-                        <span class="say"><span class="space"></span> -- Anh yêu Em --</span>
+                        <span class="say"><span class="space"></span> -- Yêu Em --</span>
 			     </font>
       </div>
                 </div>
-                <div id="clock-box">
+                <!-- <div id="clock-box">
 					<span class="STYLE1"> Chúng ta đã quen nhau: </span>
                   <div id="clock"></div>
-              </div>
+              </div> -->
                 <canvas id="canvas" width="1100" height="680"></canvas>
             </div>            
         </div>
 
     <!-- Phần nhạc -->
-    <!-- <audio id="player" autoplay loop>
-        <source src="./music/music.mp3" type="audio/mp3" />
-    </audio> -->
+    <audio id="player" autoplay loop>
+        <source src="./music/musicLove.mp3" type="audio/mp3" />
+    </audio>
     <script>
     (function(){
         var canvas = $('#canvas');		
@@ -202,7 +192,7 @@
 
         var textAnimate = eval(Jscex.compile("async", function () {
 		    var together = new Date();
-		    var year = 2023, month = 7, day = 20;  // 5. thay đổi ngày tháng năm yêu nhau tại đây hoặc ngày sinh của người mà bạn muốn chúc
+		    var year = 2017, month = 10, day = 12;  // 5. thay đổi ngày tháng năm yêu nhau tại đây hoặc ngày sinh của người mà bạn muốn chúc
 		    together.setFullYear(year, month - 1, day); 			
 		    together.setHours(0);							
 		    together.setMinutes(0);				
