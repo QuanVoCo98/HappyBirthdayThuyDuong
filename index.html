@@ -1,3 +1,4 @@
+<!DOCTYPE >
 <html
     __fvdsurfcanyoninserted="1"
     class="
@@ -10,7 +11,7 @@
     "
 >
     <head>
-        <meta charset="UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <!-- Đây là phần title của website -->
         <title>Happy Birthday</title>
         <link rel="stylesheet" href="./css/default.css" />
@@ -31,7 +32,8 @@
         <meta content="clickberry-extension-here" />
     </head>
 
-    <body onLoad="setTimeout('ChuyenTrang()', 27000)">
+    <!-- onLoad="setTimeout('ChuyenTrang()', 27000)" -->
+    <body>
         <link
             href="https://fonts.googleapis.com/css?family=Wendy+One"
             rel="stylesheet"
@@ -66,7 +68,7 @@
             <!-- 5. Phần nhạc -->
             <audio id="player" autoplay loop>
                 <source src="./music/musicHappyBrithday.mp3" type="audio/mp3">
-            </audio>
+            </audio>            
         </div>
         <script>
             if (document.location.search.match(/type=embed/gi)) {
