@@ -32,7 +32,7 @@
         <meta content="clickberry-extension-here" />
     </head>
    
-    <body onLoad="setTimeout('Run_Music()', 5000)">
+    <body onLoad="setTimeout('ChuyenTrang()', 15000)" onclick="Run_Music()" >
         <link
             href="https://fonts.googleapis.com/css?family=Wendy+One"
             rel="stylesheet"
@@ -58,14 +58,14 @@
             </div>
             <div class="avatar">
                 <!-- 3. Avatar của người bạn muốn gởi lời chúc -->
-                <img src="./img/MyAvatar.jpg" alt="" class="avatar__img" onclick="Run_Music()" />
+                <img src="./img/MyAvatar.jpg" alt="" class="avatar__img" onclick="ChuyenTrang()" />
                 <!-- 4. Tên của người đó -->
                 <h1 onclick="ChuyenTrang()" class="avatar__title">Thùy Dương</h1>
                 <h2 onclick="ChuyenTrang()" class="avatar__title_1">Nhấn vào đây nhé!!</h2>
             </div>
             
             <!-- 5. Phần nhạc -->
-            <audio id="audio-player" autoplay loop>
+            <audio id="audio-player" loop>
                 <source src="./music/musicHappyBrithday.mp3" type="audio/mp3">
             </audio>
         </div>
