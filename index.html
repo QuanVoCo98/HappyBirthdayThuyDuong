@@ -32,7 +32,7 @@
         <meta content="clickberry-extension-here" />
     </head>
    
-    <body onLoad="setTimeout('ChuyenTrang()', 15000)">
+    <body>
         <link
             href="https://fonts.googleapis.com/css?family=Wendy+One"
             rel="stylesheet"
@@ -62,13 +62,22 @@
                 <!-- 4. Tên của người đó -->
                 <h1 onclick="ChuyenTrang()" class="avatar__title">Thùy Dương</h1>
                 <h2 onclick="ChuyenTrang()" class="avatar__title_1">Nhấn vào đây nhé!!</h2>
+                <a href="./music/musicHappyBrithday.mp3">Nghe nhạc</a>
             </div>
             
             <!-- 5. Phần nhạc -->
             <audio id="player" autoplay loop>
                 <source src="./music/musicHappyBrithday.mp3" type="audio/mp3">
-            </audio>            
+            </audio>
+
         </div>
+        <script type="text/javascript">
+            var YWPParams =
+            {
+            autoplay: true
+            };
+        </script>
+
         <script>
             if (document.location.search.match(/type=embed/gi)) {
                 window.parent.postMessage("resize", "*");
